@@ -19,7 +19,8 @@ public class InheritanceCommandLineRunner implements CommandLineRunner {
     @Autowired
     private ElectricalPianoRepository electricalPianoRepository;
 
-    @Override public void run(String... args) throws Exception {
+    @Override public void run(String... args) throws
+            Exception {
         var car = new Car();
         car.setMileage(10000);
         vehicleRepository.saveAndFlush(car);
